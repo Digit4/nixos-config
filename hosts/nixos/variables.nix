@@ -22,4 +22,12 @@
 
     # Set Waybar
     
+
+    # Set Animation style
+    # Available options are:
+    # animations-def.nix  (default)
+    # animations-end4.nix (end-4 project)
+    # animations-dynamic.nix (ml4w project)
+    animChoice = ../../modules/hyprland/animations-end4.nix;
+
 }

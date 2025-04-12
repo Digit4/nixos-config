@@ -1,11 +1,15 @@
 {
+host,
 inputs,
 pkgs,
 config,
 username,
 ...
-}: {
+}: let
+    inherit (import ../../hosts/${host}/variables.nix) animChoice;
+    in {
     imports = [
+        animChoice
         ./hyprland.nix
         ./hyprlock.nix
         ./hypridle.nix
