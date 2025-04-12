@@ -7,5 +7,6 @@ username,
 }: {
     imports = [
         ./neovim
+        ./vscode
     ];
 }
