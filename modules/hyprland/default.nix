@@ -9,6 +9,7 @@ username,
         ./hyprland.nix
         ./hyprlock.nix
         ./hypridle.nix
+        ./windowrules.nix
     ];
 
 #     programs.hyprland = {
