@@ -25,8 +25,6 @@ username,
         swww
         dunst
         libnotify
-
-        rofi-wayland
     ];
 
     wayland.windowManager.hyprland  = {

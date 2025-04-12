@@ -10,5 +10,6 @@ username,
         ./common.nix
         ./utils.nix
         ./kitty.nix
+        ./rofi.nix
     ];
 }
