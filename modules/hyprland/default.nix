@@ -7,6 +7,7 @@ username,
 }: {
     imports = [
         ./hyprland.nix
+        ./hyprlock.nix
     ];
 
 #     programs.hyprland = {
