@@ -10,6 +10,8 @@
         home-manager.url = "github:nix-community/home-manager/release-24.11";
         home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
+        hyprland.url = "github:hyprwm/Hyprland";
+
         catppuccin-bat = {
             url = "github:catppuccin/bat";
             flake = false;
@@ -20,12 +22,13 @@
         self,
         nixpkgs,
         home-manager,
+        hyprland,
         ...
     }: {
         nixosConfigurations = {
             nixos = let
             username = "digit4";
-            specialArgs = { inherit username; };
+            specialArgs = { inherit username; inherit inputs; };
             in
                 nixpkgs.lib.nixosSystem {
                     inherit specialArgs;
@@ -34,6 +37,7 @@
                     modules = [
                         ./hosts/nixos
                         ./users/${username}/nixos.nix
+                        {programs.hyprland.enable = true;}
                         # TODO Stylix implementation
                         # inputs.stylix.nixosModules.stylix
 
