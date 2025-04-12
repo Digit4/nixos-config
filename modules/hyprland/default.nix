@@ -8,6 +8,7 @@ username,
     imports = [
         ./hyprland.nix
         ./hyprlock.nix
+        ./hypridle.nix
     ];
 
 #     programs.hyprland = {
