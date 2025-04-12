@@ -32,7 +32,7 @@
                     system = "x86_64-linux";
 
                     modules = [
-                        ./hosts/nixos/default.nix
+                        ./hosts/nixos
                         ./users/${username}/nixos.nix
                         # TODO Stylix implementation
                         # inputs.stylix.nixosModules.stylix
