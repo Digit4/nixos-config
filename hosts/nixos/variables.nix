@@ -28,6 +28,6 @@
     # animations-def.nix  (default)
     # animations-end4.nix (end-4 project)
     # animations-dynamic.nix (ml4w project)
-    animChoice = ../../modules/hyprland/animations-end4.nix;
+    animChoice = ../../modules/hyprland/animations-dynamic.nix;
 
 }
