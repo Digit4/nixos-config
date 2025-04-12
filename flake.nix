@@ -28,7 +28,8 @@
         nixosConfigurations = {
             nixos = let
             username = "digit4";
-            specialArgs = { inherit username; inherit inputs; };
+            host = "nixos";
+            specialArgs = { inherit username; inherit inputs; inherit host; };
             in
                 nixpkgs.lib.nixosSystem {
                     inherit specialArgs;

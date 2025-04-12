@@ -26,22 +26,4 @@ username,
         dunst
         libnotify
     ];
-
-    wayland.windowManager.hyprland  = {
-        enable = true;
-        package = pkgs.hyprland;
-        systemd = {
-            enable = true;
-            enableXdgAutostart = true;
-            variables = ["--all"];
-        };
-
-        xwayland.enable = true;
-
-
-        extraConfig = ''
-
-            ${builtins.readFile ../../configs/hyprland.conf}
-        '';
-    };
 }
