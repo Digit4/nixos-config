@@ -7,6 +7,9 @@ pkgs,
     ];
 
 
+    # xdg.configFile.nvim.source = ./nvim;
+
+
     # make zsh my user's default shell
     users.users.digit4 = {
         isNormalUser = true;
