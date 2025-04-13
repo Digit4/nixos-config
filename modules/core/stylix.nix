@@ -1,6 +1,7 @@
 {
   pkgs,
   host,
+  lib,
   ...
 }: let
   inherit (import ../../hosts/${host}/variables.nix) stylixImage catppuccinFlavor;
@@ -37,16 +38,16 @@ in {
     # };
     fonts = {
       monospace = {
-        package = pkgs.fira-code;
-        name = "FiraCode";
+        package = pkgs.jetbrains-mono;
+        name = lib.mkDefault "JetBrainsMono";
       };
       sansSerif = {
-        package = pkgs.montserrat;
-        name = "Montserrat";
+        package = pkgs.zed;
+        name = "ZedMono";
       };
       serif = {
-        package = pkgs.montserrat;
-        name = "Montserrat";
+        package = pkgs.zed;
+        name = "ZedMono";
       };
       sizes = {
         applications = 12;

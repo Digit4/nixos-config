@@ -1,11 +1,11 @@
-{
+{pkgs, config, lib,  ...}: {
     programs.kitty = {
         enable = true;
 
-#         font = {
-#             name = "Hack";
-#             size = 16;
-#         };
+        font = {
+            name = lib.mkForce "JetBrainsMono";
+            size = lib.mkForce 16;
+        };
         keybindings = {
             "kitty_mod+e" = "kitten hints"; # https://sw.kovidgoyal.net/kitty/kittens/hints/
         };
