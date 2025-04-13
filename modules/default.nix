@@ -8,5 +8,6 @@
         ./programs
         ./hyprland
         ./stylix.nix
+        ./scripts
     ];
 }

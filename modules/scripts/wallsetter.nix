@@ -1,5 +1,5 @@
 { pkgs, ... }:
-
+let wallsetter =
 pkgs.writeShellScriptBin "wallsetter" ''
 
   TIMEOUT=720
@@ -13,12 +13,18 @@ pkgs.writeShellScriptBin "wallsetter" ''
 
   while true; do
     while [ "$WALLPAPER" == "$PREVIOUS" ]; do
-      WALLPAPER=$(find ~/Pictures/Wallpapers -name '*' | awk '!/.git/' | tail -n +2 | shuf -n 1)
+      WALLPAPER=$(find ~/Pictures/Wallpapers -name '*' | tail -n +2 | shuf -n 1)  
     done
+  echo here
 
   	PREVIOUS=$WALLPAPER
 
   	${pkgs.swww}/bin/swww img "$WALLPAPER" --transition-type random --transition-step 1 --transition-fps 60
   	sleep $TIMEOUT
   done
-''
+'';
+in {
+  home.packages = [
+    wallsetter
+  ];
+}
