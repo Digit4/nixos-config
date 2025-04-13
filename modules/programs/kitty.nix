@@ -2,9 +2,6 @@
     programs.kitty = {
         enable = true;
 
-        # has been deprecated
-        themeFile = "Catppuccin-Mocha";
-
 #         font = {
 #             name = "Hack";
 #             size = 16;
