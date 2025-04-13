@@ -6,10 +6,11 @@ config,
 username,
 ...
 }: let
-    inherit (import ../../hosts/${host}/variables.nix) animChoice;
+    inherit (import ../../hosts/${host}/variables.nix) animChoice waybarChoice;
     in {
     imports = [
         animChoice
+        waybarChoice
         ./hyprland.nix
         ./hyprlock.nix
         ./hypridle.nix

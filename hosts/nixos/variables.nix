@@ -23,6 +23,9 @@
     catppuccinFlavor = "mocha";
 
     # Set Waybar
+    # Includes alternates such as waybar-simple.nix & waybar-ddubs.nix
+    waybarChoice = ../../modules/waybar/waybar-simple.nix;
+
     
 
     # Set Animation style
