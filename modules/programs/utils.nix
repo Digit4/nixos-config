@@ -9,6 +9,8 @@ config,
         # cli file manager
         nnn
 
+        stow
+
         # archive
         zip
         unzip
