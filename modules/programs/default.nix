@@ -11,5 +11,7 @@ username,
         ./utils.nix
         ./kitty.nix
         ./rofi.nix
+        ./tmux.nix
+        ./swaync.nix
     ];
 }
