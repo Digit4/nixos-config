@@ -1,0 +1,13 @@
+{pkgs,...}: let
+rofilauncher = pkgs.writeShellScriptBin "rofi-launcher" ''
+  # check if rofi is already running
+  if pidof rofi > /dev/null; then
+    pkill rofi
+  fi
+  rofi -show drun
+'';
+in {
+    home.packages = [
+        rofilauncher
+    ];
+}

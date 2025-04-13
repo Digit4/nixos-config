@@ -6,8 +6,8 @@
         ./browser
         ./editors
         ./programs
+        ./scripts
         ./hyprland
         ./stylix.nix
-        ./scripts
     ];
 }
