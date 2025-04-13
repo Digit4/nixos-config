@@ -20,6 +20,8 @@
     # set StylixImage
     stylixImage = ../../wallpapers/nix-wallpaper-stripes-logo.png;
 
+    catppuccinFlavor = "mocha";
+
     # Set Waybar
     
 

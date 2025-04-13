@@ -3,13 +3,13 @@
   host,
   ...
 }: let
-  inherit (import ../../hosts/${host}/variables.nix) stylixImage;
+  inherit (import ../../hosts/${host}/variables.nix) stylixImage catppuccinFlavor;
 in {
   # Styling Options
   stylix = {
     enable = true;
     image = stylixImage;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-${catppuccinFlavor}.yaml";
     # base16Scheme = {
     #   base00 = "282936";
     #   base01 = "3a3c4e";
