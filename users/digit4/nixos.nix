@@ -2,6 +2,9 @@
 pkgs,
 ...
 }:{
+    imports = [
+        ../../modules/core
+    ];
 
 
     # make zsh my user's default shell

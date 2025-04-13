@@ -3,10 +3,7 @@
         ../../home/core.nix
 
         # modules
-        ../../modules/browser/firefox.nix
-        ../../modules/editors
-        ../../modules/programs
-        ../../modules/hyprland
+        ../../modules
 
     ];
 

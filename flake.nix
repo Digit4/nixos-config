@@ -3,8 +3,8 @@
 
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
-        # TODO Add stylix at some point
-        # stylix.url = "github:danth/stylix/release-24.11";
+        # DONE Add stylix at some point
+        stylix.url = "github:danth/stylix/release-24.11";
 
         # adding home manager here
         home-manager.url = "github:nix-community/home-manager/release-24.11";
@@ -39,8 +39,8 @@
                         ./hosts/nixos
                         ./users/${username}/nixos.nix
                         {programs.hyprland.enable = true;}
-                        # TODO Stylix implementation
-                        # inputs.stylix.nixosModules.stylix
+                        # DONE Stylix implementation
+                        inputs.stylix.nixosModules.stylix
 
                         home-manager.nixosModules.home-manager
                         {
