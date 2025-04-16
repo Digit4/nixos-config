@@ -70,6 +70,8 @@
         rofi
         lazygit
 
+        keychain
+
         tmux
 
         sway
