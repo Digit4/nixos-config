@@ -17,7 +17,7 @@ pkgs,
         # NOTE BE VERY CAREFUL WITH THIS PROMPT. IF YOU'VE NOT SETUP THE ZSH PROPERLY
         # IT WILL KILL THE SYSTEM.
         # preferably remove both prompts if you're messing with shell.nix
-        # ignoreShellProgramCheck = true;
+        ignoreShellProgramCheck = true;
         extraGroups = ["networkmanager" "wheel"];
 
         openssh.authorizedKeys.keys = [
@@ -26,5 +26,6 @@ pkgs,
     };
 
     # I'm gonna use this instead of ignore shell program check. much safer
-    programs.zsh.enable = true;
+    # programs.zsh.enable = true;
+    # home.packages = with pkgs; [zsh];
 }
