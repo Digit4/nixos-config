@@ -5,7 +5,7 @@
         syntaxHighlighting.enable = true;
 
         shellAliases = {
-            update = "sudo nixos-rebuild switch --flake \"~/nixos-config#nixos\"";
+            update = "sudo nixos-rebuild switch --flake \"~/hyprland-nixos#nixos\"";
         };
 
         history.size = 10000;

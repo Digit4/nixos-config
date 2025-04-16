@@ -8,7 +8,7 @@ vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
 -- basic telescope configuration
 vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end,
 	{ desc = "Open harpoon window" })
-vim.keymap.set("n", "<C-d>", function() harpoon:list():remove(selected_entity) end)
+-- vim.keymap.set("n", "<C-d>", function() harpoon:list():remove(selected_entity) end)
 
 vim.keymap.set("n", "<leader>1", function() harpoon:list():select(1) end, { desc = "Go to mark [1]" })
 vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end, { desc = "Go to mark [2]" })

@@ -1,6 +1,6 @@
 _: {
   stylix.targets = {
-    waybar.enable = false;
+    waybar.enable = true;
     rofi.enable = false;
     hyprland.enable = false;
     hyprlock.enable = false;
